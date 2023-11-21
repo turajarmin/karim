@@ -1,0 +1,71 @@
+.menu{
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2b2b;
+    position: absolute;
+    left: -100%;
+    z-index: 1000;
+    transition: 300ms;
+}
+.menu nav{
+    width: inherit;
+    text-align: center;
+}
+.menu nav div{
+    width:100%;
+    height: 40px;
+}
+.menu nav div a{
+    width:100%;
+    height: inherit;
+    display: inline-block;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 300ms;
+}
+.menu nav div a:hover{
+    background-color: #5b5b5b;
+}
+div.hamburger{
+    width: 35px;
+    height: 35px;
+    background-color: #2b2b2b;
+    z-index: 999;
+    position: absolute;
+    cursor: pointer;
+}
+div.hamburger div{
+    width: 80%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: calc(50% - 80% / 2);
+    top: calc(50% - 2px / 2);
+}   
+div.hamburger div:nth-of-type(1){
+    
+    top: calc(50% - 2px / 2 - 5px);
+}
+div.hamburger div:nth-of-type(3){
+    
+    top: calc(50% - 2px / 2 + 5px);
+}
+.close{
+    width: 30px;
+    height: 30px;
+    background-color: crimson;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 30px;
+    background-color: crimson;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: whitesmoke;
+}
